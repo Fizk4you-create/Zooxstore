@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZOOXSTORE - Melayani anda</title>
+    <!-- Google Fonts & Font Awesome Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader">
+            <span>ZOOXSTORE</span>
+        </div>
+    </div>
+
+    <!-- Background Canvas untuk Efek Partikel -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Header / Profile Section -->
+    <header class="main-header">
+        <div class="profile-area">
+            <div class="logo-container">
+                <!-- Jika ada logo asli, ganti assets/logo.png -->
+                <img src="assets/logo.png" alt="ZOOXSTORE" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                <div class="logo-fallback">ZS</div>
+            </div>
+            <h1 class="neon-text-purple">ZOOXSTORE</h1>
+            <p class="subtitle">Akun All game • Website • Script • Jasa</p>
+        </div>
+    </header>
+
+    <!-- Sticky Navigation Bar -->
+    <nav class="navbar" id="main-navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-link active"><i class="fas fa-home"></i> <span>Home</span></a>
+            <a href="#produk" class="nav-link"><i class="fas fa-box-open"></i> <span>Produk</span></a>
+            <a href="#layanan" class="nav-link"><i class="fas fa-concierge-bell"></i> <span>Layanan</span></a>
+            <a href="#keamanan" class="nav-link"><i class="fas fa-shield-alt"></i> <span>Keamanan</span></a>
+            <a href="#bantuan" class="nav-link"><i class="fas fa-question-circle"></i> <span>Bantuan</span></a>
+            <a href="#kontak" class="nav-link"><i class="fas fa-address-book"></i> <span>Kontak</span></a>
+        </div>
+    </nav>
+
+    <!-- Main Content Container (Linktree Style Wrapper) -->
+    <main class="content-wrapper">
+
+        <!-- Halaman Home Section -->
+        <section id="home" class="section-block scroll-reveal">
+            <div class="hero-box">
+                <h2>Selamat Datang di <span class="neon-text-blue">ZOOXSTORE</span></h2>
+                <p>Menyediakan berbagai produk digital, website, script, panel, dan layanan terbaik dengan proses cepat serta pelayanan ramah.</p>
+                <div class="hero-buttons">
+                    <a href="#produk" class="btn btn-purple ripple">Lihat Produk</a>
+                    <a href="https://wa.me/6282379704275" target="_blank" class="btn btn-blue ripple">Hubungi Admin</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Halaman Produk Section (12 Grid Cards) -->
+        <section id="produk" class="section-block scroll-reveal">
+            <h3 class="section-title text-center neon-text-purple">Produk Kami</h3>
+            <div class="product-grid">
+                
+                <!-- Card 1 -->
+                <div class="product-card floating">
+                    <div class="product-img-box">
+                        <img src="assets/product1.png" alt="Produk 1" onerror="this.src='https://via.placeholder.com/300x180/0d0d13/00f0ff?text=ZOOXSTORE+PRODUCT'">
+                    </div>
+                    <div class="product-info">
+                        <h4>Source Code Web Top Up</h4>
+                        <p>Script website top up otomatis game terintegrasi payment gateway.</p>
+                        <div class="card-actions">
+                            <button class="btn-detail" onclick="alert('Detail Produk: Silakan hubungi admin untuk info fitur lengkap.')">Detail</button>
+                            <a href="https://wa.me/6282379704275?text=Halo%20Admin,%20saya%20mau%20order%20Source%20Code%20Web%20Top%20Up" target="_blank" class="btn-order ripple"><i class="fab fa-whatsapp"></i> Order</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="product-card floating" style="animation-delay: 0.2s;">
+                    <div class="product-img-box">
+                        <img src="assets/product2.png" alt="Produk 2" onerror="this.src='https://via.placeholder.com/300x180/0d0d13/7000ff?text=ZOOXSTORE+PRODUCT'">
+                    </div>
+                    <div class="product-info">
+                        <h4>WhatsApp Bot Premium</h4>
+                        <p>Script bot WhatsApp multi-fungsi dengan kestabilan tinggi untuk bisnis.</p>
+                        <div class="card-actions">
+                            <button class="btn-detail" onclick="alert('Detail Produk: Silakan hubungi admin untuk info fitur lengkap.')">Detail</button>
+                            <a href="https://wa.me/6282379704275?text=Halo%20Admin,%20saya%20mau%20order%20WhatsApp%20Bot%20Premium" target="_blank" class="btn-order ripple"><i class="fab fa-whatsapp"></i> Order</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="product-card floating" style="animation-delay: 0.4s;">
+                    <div class="product-img-box">
+                        <img src="assets/product3.png" alt="Produk 3" onerror="this.src='https://via.placeholder.com/300x180/0d0d13/00f0ff?text=ZOOXSTORE+PRODUCT'">
+                    </div>
+                    <div class="product-info">
+                        <h4>Telegram Bot Store</h4>
+                        <p>Script bot telegram otomatis untuk jualan produk digital / panel.</p>
+                        <div class="card-actions">
+                            <button class="btn-detail" onclick="alert('Detail Produk: Silakan hubungi admin untuk info fitur lengkap.')">Detail</button>
+                            <a href="https://wa.me/6282379704275?text=Halo%20Admin,%20saya%20mau%20order%20Telegram%20Bot%20Store" target="_blank" class="btn-order ripple"><i class="fab fa-whatsapp"></i> Order</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="product-card floating">
+                    <div class="product-img-box">
+                        <img src="assets/product4.png" alt="Produk 4" onerror="this.src='https://via.placeholder.com/300x180/0d0d13/7000ff?text=ZOOXSTORE+PRODUCT'">
+                    </div>
+                    <div class="product-info">
+                        <h4>SMM Panel Script</h4>
+                        <p>Script website penyedia layanan media sosial berbasis API operan.</p>
+                        <div class="card-actions">
+                            <button class="btn-detail" onclick="alert('Detail Produk: Silakan hubungi admin untuk info fitur lengkap.')">Detail</button>
+                            <a href="https://wa.me/6282379704275?text=Halo%20Admin,%20saya%20mau%20order%20SMM%20Panel%20Script" target="_blank" class="btn-order ripple"><i class="fab fa-whatsapp"></i> Order</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="product-card floating" style="animation-delay: 0.2s;">
+                    <div class="product-img-box">
+                        <img src="assets/product5.png" alt="Produk 5" onerror="this.src='https://via.placeholder.com/300x180/0d0d13/00f0ff?text=ZOOXSTORE+PRODUCT'">
+                    </div>
+                    <div class="product-info">
+                        <h4>Landing Page Elegan</h4>
+                        <p>Template portofolio/landing page bisnis responsif & super cepat.</p>
+                        <div class="card-actions">
+                            <button class="btn-detail" onclick="alert('Detail Produk: Silakan hubungi admin untuk info fitur lengkap.')">Detail</button>
+                            <a href="https://wa.me/6282379704275?text=Halo%20Admin,%20saya%20mau%20order%20Landing%20Page%20Elegan" target="_blank" class="btn-order ripple"><i class="fab fa-whatsapp"></i> Order</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="product-card floating" style="animation-delay: 0.4s;">
+                    <div class="product-img-box">
+                        <img src="" alt="Produk 6" onerror="this.src='https://via.placeholder.com/300x180/0d0d13/7000ff?text=ZOOXSTORE+PRODUCT'">
+                    </div>
+                    <div class="product-info">
+                        <h4>Script Payment Gateway</h4>
+                        <p>Integrasi pembayaran otomatis QRIS, E-Wallet, dan Virtual Account.</p>
+                        <div class="card-actions">
+                            <button class="btn-detail" onclick="alert('Detail Produk: Silakan hubungi admin untuk info fitur lengkap.')">Detail</button>
+                            <a href="https://wa.me/6282379704275?text=Halo%20Admin,%20saya%20mau%20order%20Script%20Payment%20Gateway" target="_blank" class="btn-order ripple"><i class="fab fa-whatsapp"></i> Order</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="product-card floating">
+                    <div class="product-img-box">
+                        <img src="" alt="Produk 7" onerror="this.src='https://via.placeholder.com/300x180/0d0d13/00f0ff?text=ZOOXSTORE+PRODUCT'">
+                    </div>
+                    <div class="product-info">
+                        <h4>Panel Pterodactyl VPS</h4>
+                        <p>Sewa panel hosting game / bot performa tinggi anti lag.</p>
+                        <div class="card-actions">
+                            <button class="btn-detail" onclick="alert('Detail Produk: Silakan hubungi admin untuk info fitur lengkap.')">Detail</button>
+                            <a href="https://wa.me/6282379704275?text=Halo%20Admin,%20saya%20mau%20order%20Panel%20Pterodactyl%20VPS" target="_blank" class="btn-order ripple"><i class="fab fa-whatsapp"></i> Order</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="product-card floating" style="animation-delay: 0.2s;">
+                    <div class="product-img-box">
+                        <img src="" alt="Produk 8" onerror="this.src='https://via.placeholder.com/300x180/0d0d13/7000ff?text=ZOOXSTORE+PRODUCT'">
+                    </div>
+                    <div class="product-info">
+                        <h4>Website Undangan Digital</h4>
+                        <p>Source code sistem pembuatan web undangan pernikahan otomatis.</p>
+                        <div class="card-actions">
+                            <button class="btn-detail" onclick="alert('Detail Produk: Silakan hubungi admin untuk info fitur lengkap.')">Detail</button>
+                            <a href="https://wa.me/6282379704275?text=Halo%20Admin,%20saya%20mau%20order%20Website%20Undangan%20Digital" target="_blank" class="btn-order ripple"><i class="fab fa-whatsapp"></i> Order</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 9 -->
+                <div class="product-card floating" style="animation-delay: 0.4s;">
+                    <div class="product-img-box">
+                        <img src="" alt="Produk 9" onerror="this.src='https://via.placeholder.com/300x180/0d0d13/00f0ff?text=ZOOXSTORE+PRODUCT'">
+                    </div>
+                    <div class="product-info">
+                        <h4>Script Bot Kasir Digital</h4>
+                        <p>Sistem pencatatan transaksi toko digital lewat aplikasi chat.</p>
+                        <div class="card-actions">
+                            <button class="btn-detail" onclick="alert('Detail Produk: Silakan hubungi admin untuk info fitur lengkap.')">Detail</button>
+                            <a href="https://wa.me/6282379704275?text=Halo%20Admin,%20saya%20mau%20order%20Script%20Bot%20Kasir%20Digital" target="_blank" class="btn-order ripple"><i class="fab fa-whatsapp"></i> Order</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 10 -->
+                <div class="product-card floating">
+                    <div class="product-img-box">
+                        <img src="" alt="Produk 10" onerror="this.src='https://via.placeholder.com/300x180/0d0d13/7000ff?text=ZOOXSTORE+PRODUCT'">
+                    </div>
+                    <div class="product-info">
+                        <h4>Template Web Portfolio v2</h4>
+                        <p>Tampilan premium gaya cyberpunk gelap untuk portofolio developer.</p>
+                        <div class="card-actions">
+                            <button class="btn-detail" onclick="alert('Detail Produk: Silakan hubungi admin untuk info fitur lengkap.')">Detail</button>
+                            <a href="https://wa.me/6282379704275?text=Halo%20Admin,%20saya%20mau%20order%20Template%20Web%20Portfolio%20v2" target="_blank" class="btn-order ripple"><i class="fab fa-whatsapp"></i> Order</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 11 -->
+                <div class="product-card floating" style="animation-delay: 0.2s;">
+                    <div class="product-img-box">
+                        <img src="" alt="Produk 11" onerror="this.src='https://via.placeholder.com/300x180/0d0d13/00f0ff?text=ZOOXSTORE+PRODUCT'">
+                    </div>
+                    <div class="product-info">
+                        <h4>Script Linktree Creator</h4>
+                        <p>Sistem manajemen tautan bio seperti linktree milik pribadi.</p>
+                        <div class="card-actions">
+                            <button class="btn-detail" onclick="alert('Detail Produk: Silakan hubungi admin untuk info fitur lengkap.')">Detail</button>
+                            <a href="https://wa.me/6282379704275?text=Halo%20Admin,%20saya%20mau%20order%20Script%20Linktree%20Creator" target="_blank" class="btn-order ripple"><i class="fab fa-whatsapp"></i> Order</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 12 -->
+                <div class="product-card floating" style="animation-delay: 0.4s;">
+                    <div class="product-img-box">
+                        <img src="" alt="Produk 12" onerror="this.src='https://via.placeholder.com/300x180/0d0d13/7000ff?text=ZOOXSTORE+PRODUCT'">
+                    </div>
+                    <div class="product-info">
+                        <h4>Jasa Kustom API Integrasi</h4>
+                        <p>Menghubungkan platform digital Anda dengan berbagai pihak ketiga.</p>
+                        <div class="card-actions">
+                            <button class="btn-detail" onclick="alert('Detail Produk: Silakan hubungi admin untuk info fitur lengkap.')">Detail</button>
+                            <a href="https://wa.me/6282379704275?text=Halo%20Admin,%20saya%20mau%20order%20Jasa%20Kustom%20API%20Integrasi" target="_blank" class="btn-order ripple"><i class="fab fa-whatsapp"></i> Order</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Halaman Layanan Section -->
+        <section id="layanan" class="section-block scroll-reveal">
+            <h3 class="section-title text-center neon-text-blue">Layanan Kami</h3>
+            <div class="services-list">
+                <div class="service-item"><i class="fas fa-code s-icon purple"></i> Pembuatan Website</div>
+                <div class="service-item"><i class="fab fa-whatsapp s-icon blue"></i> Script WhatsApp Bot</div>
+                <div class="service-item"><i class="fab fa-telegram-plane s-icon purple"></i> Script Telegram Bot</div>
+                <div class="service-item"><i class="fas fa-layer-group s-icon blue"></i> Landing Page</div>
+                <div class="service-item"><i class="fas fa-gamepad s-icon purple"></i> Web Top Up</div>
+                <div class="service-item"><i class="fas fa-credit-card s-icon blue"></i> Website Payment</div>
+                <div class="service-item"><i class="fas fa-server s-icon purple"></i> Panel Hosting</div>
+                <div class="service-item"><i class="fas fa-tools s-icon blue"></i> Jasa Edit Website</div>
+                <div class="service-item"><i class="fas fa-download s-icon purple"></i> Jasa Install Script</div>
+            </div>
+        </section>
+
+        <!-- Halaman Keamanan Section -->
+        <section id="keamanan" class="section-block scroll-reveal">
+            <h3 class="section-title text-center neon-text-purple">Keamanan ZOOXSTORE</h3>
+            <div class="security-box text-center">
+                <div class="shield-animation">
+                    <i class="fas fa-shield-alt shield-icon"></i>
+                </div>
+                <ul class="security-list">
+                    <li><i class="fas fa-check-circle check"></i> Aman</li>
+                    <li><i class="fas fa-check-circle check"></i> Terpercaya</li>
+                    <li><i class="fas fa-check-circle check"></i> Fast Respon</li>
+                    <li><i class="fas fa-check-circle check"></i> Tidak Menyimpan Data Pembeli</li>
+                    <li><i class="fas fa-check-circle check"></i> Proses Cepat</li>
+                    <li><i class="fas fa-check-circle check"></i> Support Setelah Pembelian</li>
+                    <li><i class="fas fa-check-circle check"></i> Garansi sesuai ketentuan</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Halaman Bantuan Section -->
+        <section id="bantuan" class="section-block scroll-reveal">
+            <h3 class="section-title text-center neon-text-blue">Butuh Bantuan?</h3>
+            <div class="help-box text-center">
+                <p class="help-text">Layanan bantuan tersedia setiap hari.</p>
+                <p class="wa-num"><i class="fab fa-whatsapp"></i> 082379704275</p>
+                <a href="https://wa.me/6282379704275" target="_blank" class="btn btn-big-wa ripple">HUBUNGI ADMIN</a>
+            </div>
+        </section>
+
+        <!-- Halaman Kontak Section -->
+        <section id="kontak" class="section-block scroll-reveal">
+            <h3 class="section-title text-center neon-text-purple">Kontak Kami</h3>
+            <div class="contact-box">
+                <div class="contact-info-row">
+                    <span class="info-label">WhatsApp:</span>
+                    <span class="info-val">082379704275</span>
+                </div>
+                <div class="contact-info-row">
+                    <span class="info-label">Status:</span>
+                    <span class="info-val text-green animate-pulse"><span class="dot-online"></span> Online</span>
+                </div>
+                <div class="contact-info-row">
+                    <span class="info-label">Jam Operasional:</span>
+                    <span class="info-val">08.00 - 22.00 WIB</span>
+                </div>
+                <div class="text-center mt-20">
+                    <a href="https://wa.me/6282379704275" target="_blank" class="btn btn-blue ripple"><i class="fas fa-comments"></i> Chat Sekarang</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <p class="thanks-txt">Terima kasih telah mengunjungi ZOOXSTORE.</p>
+        <p class="copyright">&copy; 2026 <span class="neon-text-blue">ZOOXSTORE</span>. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Button Back To Top -->
+    <button id="back-to-top" class="btt-btn"><i class="fas fa-chevron-up"></i></button>
+
+    <script src="script.js"></script>
+</body>
+</html>
